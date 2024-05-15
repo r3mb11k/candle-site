@@ -8,6 +8,17 @@
 }
 
 
+html {
+    overflow: auto; /* Включает прокрутку */
+    scrollbar-width: none; /* Скрывает полосу прокрутки в Firefox */
+  }
+  
+  html::-webkit-scrollbar {
+    display: none; /* Скрывает полосу прокрутки в Chrome, Safari и новых версиях Edge */
+  }
+  
+
+
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -69,6 +80,7 @@ a {
     font-size: 20px;
     transition: all 0.5s ease-in-out;
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .entry:hover {
